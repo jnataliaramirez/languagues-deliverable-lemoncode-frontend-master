@@ -5,7 +5,7 @@
 Implementa una función `clone` que devuelva un objeto clonado a partir de otro:
 
 ```javascript
-function clone(source) {
+// function clone(source) {
   // Implementation here.
 }
 ```
@@ -17,7 +17,7 @@ Dados dos objetos cualesquiera, implementa una función `merge` que mezcle uno s
 **TIP**: Usa la función `clone` del apartado A.
 
 ```javascript
-function merge(source, target) {
+// function merge(source, target) {
   // Implementation here.
 }
 
