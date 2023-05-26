@@ -13,8 +13,8 @@ interface IsEqual {
   <T>(a: T, b: T): boolean;
 }
 
-const user: User = { name: "María", age: 30 };
-const clonedUser: User = { name: "María", age: 30 };
+const user1: User = { name: "María", age: 30 };
+const clonedUser1: User = { name: "María", age: 30 };
 
 const isEqual: IsEqual = (a, b) => {
   // 1. Verificar si tienen la misma cantidad de claves:
@@ -37,4 +37,4 @@ const isEqual: IsEqual = (a, b) => {
   return true;
 };
 
-console.log("isEqual: ", isEqual(user, clonedUser)); // true
+console.log("isEqual: ", isEqual(user1, clonedUser1)); // true

@@ -5,7 +5,7 @@
 // import "./01-practica/102-califications/index.js";
 // import "./01-practica/103-check-arguments/index.js";
 // import "./01-practica/104-clone-merge/index.js"
-import "./01-practica/105-deep-equal/indexA.js";
+// import "./01-practica/105-deep-equal/indexA.js";
 // import "./01-practica/105-deep-equal/indexB.js";
 // import "./01-practica/114-values/index.js";
 

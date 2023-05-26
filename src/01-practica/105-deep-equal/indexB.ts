@@ -2,20 +2,42 @@ console.log("************** PRACTICE 105 - APARATADO B *********************");
 
 // *** ## Apartado 2
 
-var user2 = {
+// --- Types
+
+interface Address {
+  city: string;
+  code: number;
+}
+
+interface User2 {
+  name: string;
+  age: number;
+  address: Address;
+  friends: Array<string>;
+}
+
+interface AreArraysEqual {
+  <T>(arr1: T[], arr2: T[]): boolean;
+}
+
+interface IsDeepEqual {
+  (a: object, b: object): boolean;
+}
+
+const user2 : User2= {
   name: "María",
   age: 30,
   address: { city: "Málaga", code: 29620 },
   friends: ["Juan"],
 };
-var clonedUser2 = {
+const clonedUser2 : User2= {
   name: "María",
   age: 30,
   address: { city: "Málaga", code: 29620 },
   friends: ["Juan"],
 };
 
-function areArraysEqual(arr1, arr2) {
+const areArraysEqual: AreArraysEqual = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -27,9 +49,9 @@ function areArraysEqual(arr1, arr2) {
   }
 
   return true;
-}
+};
 
-const isDeepEqual = (a, b) => {
+const isDeepEqual: IsDeepEqual = (a, b) => {
   const keysA = Object.keys(a);
   const keysB = Object.keys(b);
 
@@ -46,17 +68,18 @@ const isDeepEqual = (a, b) => {
       return false;
     }
 
-    // Identifica si el valor de b es diferente al de a en primitivo
+    // Identifica si el elementoA y elementoB no son objetos (es decir primitivos)
     if (!(typeof elementA === "object") && !(typeof elementB === "object")) {
       if (elementA !== elementB) {
         return false;
       }
     } else {
-      // Verificar si los dos son objetos
+      // Verificar si los dos son arrays
       if (Array.isArray(elementA) && Array.isArray(elementB)) {
         if (!areArraysEqual(elementA, elementB)) {
           return false;
         }
+        // Sino es un objeto y hace recursividad del objeto
       } else {
         if (!isDeepEqual(elementA, elementB)) {
           return false;
