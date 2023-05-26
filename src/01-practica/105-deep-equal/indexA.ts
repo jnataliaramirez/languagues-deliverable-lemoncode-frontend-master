@@ -2,14 +2,25 @@ console.log("************** PRACTICE 105 - APARATADO A *********************");
 
 // *** ## Apartado 1
 
-const user = { name: "María", age: 30 };
-const clonedUser = { name: "María", age: 30 };
+// --- types
+interface User {
+  name: string;
+  age: number;
+  ciudad?: boolean;
+}
 
-const isEqual = (a, b) => {
+interface IsEqual {
+  <T>(a: T, b: T): boolean;
+}
+
+const user: User = { name: "María", age: 30 };
+const clonedUser: User = { name: "María", age: 30 };
+
+const isEqual: IsEqual = (a, b) => {
   // 1. Verificar si tienen la misma cantidad de claves:
   // a. Se sacan en un array las claves de los objetos, para verificar que tienen la misma longitud:
-  const keysA = Object.keys(a);
-  const keysB = Object.keys(b);
+  const keysA: string[] = Object.keys(a);
+  const keysB: string[] = Object.keys(b);
 
   // b. Se verifica que tengan el mismo número de claves:
   if (keysA.length !== keysB.length) {
