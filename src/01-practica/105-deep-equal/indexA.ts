@@ -5,7 +5,7 @@ console.log("************** PRACTICE 105 - APARATADO A *********************");
 // --- types
 interface User {
   name: string;
-  age: number;
+  age?: number;
   ciudad?: boolean;
 }
 

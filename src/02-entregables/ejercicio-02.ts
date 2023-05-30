@@ -7,7 +7,6 @@ const example3: number[] = [5, 6, 7, 8];
 const example4: string[] = ["urna", "metus", "blandit"];
 
 // * Entregable
-
 const concat = <T, U>(arr1: T[], arr2: U[]): (T | U)[] => {
   return [...arr1, ...arr2];
 };
