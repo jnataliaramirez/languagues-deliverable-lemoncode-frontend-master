@@ -1,7 +1,6 @@
 console.log("************** DELIVERABLE 04 *********************");
 
 // --- Types
-
 interface Books {
   title: string;
   isRead: boolean;
