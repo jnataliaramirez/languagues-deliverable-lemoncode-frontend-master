@@ -4,7 +4,7 @@ console.log("************** DELIVERABLE 01 *********************");
 type functionReturnArray = <T>(array: T[]) => T[];
 type functionReturnT = <T>(array: T[]) => T;
 
-// ---
+// --- Datos
 const example: number[] = [1, 2, 3, 4, 5];
 
 // * --> Función Head
@@ -23,7 +23,7 @@ console.log("tail()", tail(example));
 
 // * --> Función Init
 const init: functionReturnArray = (array) => array.slice(0, array.length - 1);
-// console.log("init()", init(example));
+console.log("init()", init(example));
 
 // * --> Función Last
 const last: functionReturnT = (array) => array.findLast((last) => last);

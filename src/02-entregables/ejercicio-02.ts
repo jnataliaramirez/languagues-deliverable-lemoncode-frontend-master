@@ -17,6 +17,7 @@ type ConcatOpt = <T extends number | string>(...arrays: T[][]) => T[];
 
 const concatOpt: ConcatOpt = (...arrays) => arrays.flat(1);
 
+// * --> Consola
 console.log(
   "concatOpt()",
   concatOpt<number | string>(example2, example1, example4, example3)

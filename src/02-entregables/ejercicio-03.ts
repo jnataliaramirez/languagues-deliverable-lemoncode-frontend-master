@@ -9,17 +9,15 @@ interface Information {
   married?: boolean;
 }
 
-// ---
+// --- Datos
 const a: Information = { name: "Maria", surname: "Ibañez", country: "SPA" };
 const b: Information = { name: "Luisa", age: 31, married: true };
 
 //  * -->  Clone
-
 const clone = <T>(source: T): T => ({ ...source });
 console.log("clone()", clone(a));
 
 //  * -->  Merge
-
 const merge = <T, U>(source: T, target: U): T | U => ({
   ...clone(target),
   ...clone(source),
