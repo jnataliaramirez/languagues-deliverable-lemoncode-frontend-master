@@ -22,8 +22,8 @@ Dados dos objetos cualesquiera, implementa una función `merge` que mezcle uno s
 }
 
 // Por ejemplo, dados estos 2 objetos:
-var a = { name: "Maria", surname: "Ibañez", country: "SPA" };
-var b = { name: "Luisa", age: 31, married: true };
+// var a = { name: "Maria", surname: "Ibañez", country: "SPA" };
+// var b = { name: "Luisa", age: 31, married: true };
 
 // El resultado de mezclar a sobre b sería:
 merge(a, b); // {name: "Maria", age: 31, married: true, surname: "Ibañez", country: "SPA"}
