@@ -1,14 +1,19 @@
-const dices = () => {
-  let counter = 0;
-  let firstDices = null;
-  let secondDices = null;
+interface DicesFunction {
+  rollTheDices: () => void;
+  reset: () => void;
+}
+
+const dices = () : DicesFunction => {
+  let counter : number  = 0;
+  let firstDices : number = null;
+  let secondDices : number = null;
 
   if (firstDices === null && secondDices === null) {
     console.log('Tira los dados')
   }
-  const dicesRandom = () => Math.floor(Math.random() * (6) + 1);
+  const dicesRandom = () : number => Math.floor(Math.random() * (6) + 1);
 
-  const rollTheDices = () => {
+  const rollTheDices = () : void => {
     firstDices = dicesRandom();
     secondDices = dicesRandom();
     counter = counter + 1;
@@ -22,7 +27,7 @@ const dices = () => {
     }
   }
 
-  const reset = () => {
+  const reset = () : void=> {
     firstDices = null;
     secondDices = null;
     counter = 0;
