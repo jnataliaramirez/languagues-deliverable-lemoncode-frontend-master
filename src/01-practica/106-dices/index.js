@@ -1,23 +1,24 @@
 const dices = () => {
-  const dicesRandom = () => Math.floor(Math.random() * (6) + 1);
   let counter = 0;
   let firstDices = null;
   let secondDices = null;
 
-  const rollTheDices = () => {
-    if (firstDices === null && secondDices === null) {
-      console.log('Tira los dados')
-    }
+  if (firstDices === null && secondDices === null) {
+    console.log('Tira los dados')
+  }
+  const dicesRandom = () => Math.floor(Math.random() * (6) + 1);
 
+  const rollTheDices = () => {
     firstDices = dicesRandom();
     secondDices = dicesRandom();
     counter = counter + 1;
+    const message = `Su intento No. ${counter} dio: ${firstDices} y ${secondDices}`;
 
     if (!(firstDices === 6 && secondDices === 6)) {
-      console.log(`Su intento No. ${counter} dio: ${firstDices} y ${secondDices}`);
+      console.log(message);
     } else {
-      console.log(`Su intento No. ${counter} dio: ${firstDices} y ${secondDices}`)
-      console.log("Te has ganado un globo 🎈")
+      console.log(message);
+      console.log("Te has ganado un globo 🎈");
     }
   }
 
@@ -38,5 +39,8 @@ const dices = () => {
 const roll = dices();
 roll.rollTheDices();
 roll.rollTheDices();
+roll.rollTheDices();
 roll.reset()
 roll.rollTheDices();
+
+
