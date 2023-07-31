@@ -8,9 +8,11 @@
 // import "./01-practica/105-deep-equal/indexA.js";
 // import "./01-practica/105-deep-equal/indexB.js";
 // import "./01-practica/106-dices/index.js";
-import "./01-practica/107-hoisting/indexA.js";
-import "./01-practica/107-hoisting/indexB.js";
-import "./01-practica/107-hoisting/indexC.js";
+// import "./01-practica/107-hoisting/indexA.js";
+// import "./01-practica/107-hoisting/indexB.js";
+// import "./01-practica/107-hoisting/indexC.js";
+// import "./01-practica/108-includes/index.js";
+import "./01-practica/109-primes/index.js";
 // import "./01-practica/114-values/index.js";
 
 // *** Entregables
