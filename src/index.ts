@@ -12,7 +12,8 @@
 // import "./01-practica/107-hoisting/indexB.js";
 // import "./01-practica/107-hoisting/indexC.js";
 // import "./01-practica/108-includes/index.js";
-import "./01-practica/109-primes/index.js";
+// import "./01-practica/109-primes/index.js";
+import "./01-practica/110-read-book/index.js";
 // import "./01-practica/114-values/index.js";
 
 // *** Entregables
