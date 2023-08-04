@@ -14,7 +14,8 @@
 // import "./01-practica/108-includes/index.js";
 // import "./01-practica/109-primes/index.js";
 // import "./01-practica/110-read-book/index.js";
-import "./01-practica/111-reverse-text/index.js";
+// import "./01-practica/111-reverse-text/index.js";
+import "./01-practica/112-subsets/index.js";
 // import "./01-practica/114-values/index.js";
 
 // *** Entregables
