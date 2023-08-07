@@ -1,14 +1,9 @@
-const subsets = (word : string) => { 
-  const arrayWord = word.split('');
-  let newArrayWord = [];
-
-  for (let i = 1; i < arrayWord.length; i++) {
-    newArrayWord.push(arrayWord.at(-i))
+const subsets = (word : string) : string[] => {
+  const result = [];
+  for (let i = 1; i < word.length; i++) {
+    result.push(word.substring(i));
   }
+  return result;
+}
 
-  console.log(newArrayWord.reverse())
-
-};
-
-console.log('message')
-console.log(subsets("message"));
+console.log(subsets("natalia"));
