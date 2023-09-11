@@ -10,8 +10,8 @@ interface Information {
 }
 
 // --- Datos
-const a: Information = { name: "Maria", surname: "Ibañez", country: "SPA" };
-const b: Information = { name: "Luisa", age: 31, married: true };
+const a1: Information = { name: "Maria", surname: "Ibañez", country: "SPA" };
+const b1: Information = { name: "Luisa", age: 31, married: true };
 
 //  * -->  Clone
 const clone = <T>(source: T): T => ({ ...source });
@@ -22,4 +22,4 @@ const merge = <T, U>(source: T, target: U): T | U => ({
   ...clone(target),
   ...clone(source),
 });
-console.log("merge()", merge(a, b));
+console.log("merge()", merge(a1, b1));
